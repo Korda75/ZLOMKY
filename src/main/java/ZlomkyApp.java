@@ -14,14 +14,28 @@ public class ZlomkyApp {
 
         Zlomek c = a.krat(b);
         System.out.printf("Zlomek a * b = %s\n", c.zkratit());
+        System.out.printf("Zlomek a / b = %s\n", a.deleno(b), a.zkratit());
+        System.out.printf("Zlomek a + b = %s\n", a.plus(b));
+        System.out.printf("Zlomek a - b = %s\n", a.minus(b));
 
-        Zlomek d = a.deleno(b);
-        System.out.printf("Zlomek a / b = %s\n", d.zkratit());
+        Zlomek[] poleZlomku = new Zlomek[4];
+        poleZlomku [0] = a;
+        poleZlomku [1] = b;
+        poleZlomku [2] = c;
+        poleZlomku [3] = a.deleno(b);
 
-        Zlomek e = a.plus(b);
-        System.out.printf("Zlomek a + b = %s\n", e.zkratit());
-
-        Zlomek f = a.minus(b);
-        System.out.printf("Zlomek a - b = %s\n", f.zkratit());
+        Zlomek all = sumaZlomku(poleZlomku);
+        System.out.printf("Soucet je %s\n", all);
     }
+
+    public static Zlomek sumaZlomku(Zlomek[] pole) {
+        Zlomek soucet = new Zlomek(0, 1);
+
+        for (Zlomek z : pole) {
+            soucet = soucet.plus(z); //soucet += z
+        }
+
+        return soucet.zkratit();
+    }
+
 }
