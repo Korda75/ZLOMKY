@@ -26,18 +26,22 @@ class ZlomekTest {
 
     @org.junit.jupiter.api.Test
     void deleno() {
+        assert(false);
 
     }
 
     @org.junit.jupiter.api.Test
     void plus() {
+        assert(false);
     }
 
     @org.junit.jupiter.api.Test
     void minus() {
+        assert(false);
     }
 
     @org.junit.jupiter.api.Test
     void zkratit() {
+        assert(false);
     }
 }
