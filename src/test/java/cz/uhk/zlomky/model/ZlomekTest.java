@@ -103,4 +103,5 @@ class ZlomekTest {
         assertEquals(2, b.getCitatel(), "Chybny citatel");
         assertEquals(1, b.getJmenovatel(), "Chybny jmenovatel");
     }
+
 }

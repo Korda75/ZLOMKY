@@ -1,3 +1,5 @@
+package cz.uhk.zlomky.app;
+
 import cz.uhk.zlomky.model.Zlomek;
 
 public class ZlomkyApp {
