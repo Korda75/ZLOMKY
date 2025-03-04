@@ -19,14 +19,14 @@ public class SeznamZlomkuApp {
 
 
 
-        System.out.println("Soucet Zlomku je" +seznam.spoctiSoucet());
+        System.out.println("Soucet Zlomku je " +seznam.spoctiSoucet());
 
-        System.out.println("Soucet Zlomku realne je" +seznam.spoctiSoucet().doubleValue());
+        System.out.println("Soucet Zlomku realne je " +seznam.spoctiSoucet().doubleValue());
 
         Zlomek prumer = seznam.spoctiPrumer();
-        System.out.println("Prumer zlomku je" +prumer);
+        System.out.println("Prumer zlomku je " +prumer);
 
-        System.out.println("Prumer Zlomku realne je" +prumer.doubleValue());
+        System.out.println("Prumer Zlomku realne je " +prumer.doubleValue());
     }
 
 

@@ -31,7 +31,13 @@ class SeznamZlomkuTest {
     }
     @Test
     void odebratZlomek() {
-        fail();
+        seznam.pridatZlomek(new Zlomek(5,6));
+        seznam.pridatZlomek(new Zlomek(4,7));
+        seznam.odebratZlomek(1);
+        Zlomek y = seznam.vratZlomek(0);
+        assertEquals(5, y.getCitatel(),"Citatel");
+        assertEquals(6, y.getJmenovatel(), "Jmenovatel");
+
     }
 
     @Test
@@ -49,17 +55,25 @@ class SeznamZlomkuTest {
 
     @Test
     void vypisZlomky() {
-        //nemusím dělat
+        //nemusíme dělat
         fail();
     }
 
     @Test
     void spoctiSoucet() {
-        fail();
+        seznam.pridatZlomek(new Zlomek (2,7));
+        seznam.pridatZlomek(new Zlomek(5,2));
+        Zlomek y = seznam.spoctiSoucet();
+        assertEquals(39, y.getCitatel(), "Citatel");
+        assertEquals(14, y.getJmenovatel(), "Jmenovatel");
     }
 
     @Test
     void spoctiPrumer() {
-        fail();
+        seznam.pridatZlomek(new Zlomek (2,7));
+        seznam.pridatZlomek(new Zlomek(5,2));
+        Zlomek y = seznam.spoctiPrumer();
+        assertEquals(39, y.getCitatel(), "Citatel");
+        assertEquals(28, y.getJmenovatel(), "Jmenovatel");
     }
 }
